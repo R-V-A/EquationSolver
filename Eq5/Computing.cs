@@ -106,7 +106,7 @@ namespace Eq5
             return _intervals;
         }
         
-        private static double F(double X)
+        public static double F(double X)
         {
             double result = 0;
             var power = 0;

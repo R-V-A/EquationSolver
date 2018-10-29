@@ -54,6 +54,18 @@ namespace Eq5
             }
         }
 
+        private void Check_OnClick(object sender, RoutedEventArgs e)
+        {
+            string check = "";
+            foreach (var root in Computing.Roots)
+            {
+                if (root[root.Length - 1] != 'i')
+                    check += $"y({root}) = {string.Format("{0:N10}",Computing.F(Convert.ToDouble(root)))}\n"; 
+            }
+
+            CheckBlock.Text = check;
+        }
+
         private void GetSolveA_OnClick(object sender, RoutedEventArgs e)
         {
             try
