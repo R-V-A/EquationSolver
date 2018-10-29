@@ -90,13 +90,13 @@ namespace Eq5
                     Convert.ToDouble(CoeffA0.Text), Convert.ToDouble(CoeffA1.Text), Convert.ToDouble(CoeffA2.Text),
                     Convert.ToDouble(CoeffA3.Text), Convert.ToDouble(CoeffA4.Text), Convert.ToDouble(CoeffA5.Text)
                 };
+                Computing.GetIntervals(Convert.ToDouble(IntervalA.Text), Convert.ToDouble(IntervalB.Text));
+                Computing.HalfDivision(Convert.ToDouble(Accurate.Text));
             }
             catch (FormatException exception)
             {
-                MessageBox.Show("Что-то странные коэффициенты.");
+                MessageBox.Show("Ошибка ввода.");
             }
-            Computing.GetIntervals(Convert.ToDouble(IntervalA.Text), Convert.ToDouble(IntervalB.Text));
-            Computing.HalfDivision(Convert.ToDouble(Accurate.Text));
             Pop_DiAnswers();
         }
 
