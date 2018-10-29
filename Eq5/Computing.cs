@@ -72,7 +72,7 @@ namespace Eq5
                 var x2 = -(A + B) / 2 - a / 3 + (Math.Sqrt(3) * (A - B) / 2).ToString() + "i";
                 if (A == B)
                     x2 = (- A - a / 3 ).ToString();
-                var x3 = x2;
+                var x3 = x2.Replace('-','+');
                 Roots.Add(x1.ToString());
                 Roots.Add(x2);
                 Roots.Add(x3);
