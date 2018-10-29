@@ -119,7 +119,7 @@ namespace Eq5
             newModel.Axes.Clear();
             newModel.Axes.Add(new LinearAxis()
             {
-                Position = AxisPosition.Left,
+                Position = AxisPosition.Bottom,
                 PositionAtZeroCrossing = true,
                 AxislineStyle = LineStyle.Solid,
                 FilterMaxValue = xMax,
@@ -127,13 +127,20 @@ namespace Eq5
             });
             newModel.Axes.Add(new LinearAxis()
             {
-                Position = AxisPosition.Bottom,
+                Position = AxisPosition.Left,
                 PositionAtZeroCrossing = true,
                 AxislineStyle = LineStyle.Solid,
                 FilterMaxValue = yMax,
                 FilterMinValue = yMin
             });
-            newModel.Series.Add(new FunctionSeries(T.FxP,xMin,xMax,0.1));
+            newModel.Axes[0].Reset();
+            newModel.Axes[1].Reset();
+            newModel.Axes[0].Maximum = xMax;
+            newModel.Axes[0].Minimum = xMin;
+            newModel.Axes[1].Maximum = yMax;
+            newModel.Axes[1].Minimum = yMin;
+            PlotView.InvalidatePlot();
+            newModel.Series.Add(new FunctionSeries(T.FxP,xMin-100,xMax+100,0.1));
             PlotView.Model = newModel;
         }
         
