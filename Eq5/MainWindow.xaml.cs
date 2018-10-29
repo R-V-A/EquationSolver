@@ -32,6 +32,8 @@ namespace Eq5
             TextBlock[] answersFields = { DigitalRootX1, DigitalRootX2, DigitalRootX3, DigitalRootX4, DigitalRootX5 };
             var roots = Computing.Roots;
             var i = 0;
+            for (int j = 0; j < answersFields.Length; j++)
+                answersFields[j].Text = "";
             foreach (var root in roots)
             {
                 answersFields[i].Text = root;
@@ -43,6 +45,8 @@ namespace Eq5
             TextBlock[] answersFields = { AnalizeRootX1, AnalizeRootX2, AnalizeRootX3, AnalizeRootX4, AnalizeRootX5 };
             var roots = Computing.Roots;
             var i = 0;
+            for (int j = 0; j < answersFields.Length; j++)
+                answersFields[j].Text = "";
             foreach (var root in roots)
             {
                 answersFields[i].Text = root;
