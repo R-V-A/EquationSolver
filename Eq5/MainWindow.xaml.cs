@@ -5,9 +5,7 @@ using System.Windows.Controls;
 using System.Windows.Media.Imaging;
 using OxyPlot;
 using OxyPlot.Axes;
-using OxyPlot.Reporting;
 using OxyPlot.Series;
-//using OxyPlot.Wpf;
 
 namespace Eq5
 {
@@ -70,8 +68,7 @@ namespace Eq5
                         Computing.GetSolveThirdPowEq();
                         Pop_AnAnswers();
                         break;
-                    case 4: //Computing.GetSolveFourthPowEq();
-                    //break;
+                    case 4: 
                     case 5:
                         MessageBox.Show("Тут только численные решения :(");
                         break;
@@ -101,7 +98,6 @@ namespace Eq5
             Computing.GetIntervals(Convert.ToDouble(IntervalA.Text), Convert.ToDouble(IntervalB.Text));
             Computing.HalfDivision(Convert.ToDouble(Accurate.Text));
             Pop_DiAnswers();
-            MessageBox.Show("Digital Solve!");
         }
 
         private void GetGraph_OnClick(object sender, RoutedEventArgs e)
@@ -139,7 +135,6 @@ namespace Eq5
             });
             newModel.Series.Add(new FunctionSeries(T.FxP,xMin,xMax,0.1));
             PlotView.Model = newModel;
-            MessageBox.Show("There will be a graph");
         }
         
         private void PowerComboBox_OnDropDownClosed(object sender, EventArgs e)
