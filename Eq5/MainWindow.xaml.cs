@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Media.Imaging;
 using OxyPlot;
 using OxyPlot.Axes;
@@ -197,15 +198,24 @@ namespace Eq5
                     }
                 }
         }
-    }
-    public class MainViewModel
-    {
-        public MainViewModel()
+
+        private void GotMouseCapture(object sender, RoutedEventArgs e)
         {
-            this.MyModel = new PlotModel { Title = "Example 1" };
-            this.MyModel.Series.Add(new FunctionSeries(Math.Cos, 0, 10, 0.1, "cos(x)"));
+            TextBox textBox = (TextBox) sender;
+            textBox.SelectAll();
         }
 
-        public PlotModel MyModel { get; private set; }
+        private void LostFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+            if (textBox.Text == "")
+                textBox.Text = "0";
+            if (Accurate.Text == "")
+                textBox.Text = "0.01";
+            if (IntervalA.Text == "")
+                textBox.Text = "-99";
+            if (IntervalB.Text == "")
+                textBox.Text = "99";
+        }
     }
 }

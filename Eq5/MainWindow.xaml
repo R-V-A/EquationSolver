@@ -22,33 +22,33 @@
 
         <Grid HorizontalAlignment="Left" Height="60" Margin="15,54,0,0" VerticalAlignment="Top" Width="520">
 
-            <TextBox x:Name="CoeffA5" HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="25" Margin="32,0,0,0" TextAlignment="Center"/>
+            <TextBox x:Name="CoeffA5" HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="25" Margin="32,0,0,0" TextAlignment="Center" GotMouseCapture="GotMouseCapture" LostFocus="LostFocus"/>
             <Label x:Name="CoeffLabelA5" Content="a5 =" HorizontalAlignment="Left" Margin="0,-4,0,0" VerticalAlignment="Top" Width="34"/>
-            <TextBox x:Name="CoeffA4" HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="25" Margin="92,0,0,0" TextAlignment="Center"/>
+            <TextBox x:Name="CoeffA4" HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="25" Margin="92,0,0,0" TextAlignment="Center" GotMouseCapture="GotMouseCapture" LostFocus="LostFocus"/>
             <Label x:Name="CoeffLabelA4" Content="a4 =" HorizontalAlignment="Left" Margin="60,-4,0,0" VerticalAlignment="Top" Width="34"/>
-            <TextBox x:Name="CoeffA3" HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="25" Margin="152,0,0,0" TextAlignment="Center"/>
+            <TextBox x:Name="CoeffA3" HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="25" Margin="152,0,0,0" TextAlignment="Center" GotMouseCapture="GotMouseCapture" LostFocus="LostFocus"/>
             <Label x:Name="CoeffLabelA3" Content="a3 =" HorizontalAlignment="Left" Margin="120,-4,0,0" VerticalAlignment="Top" Width="34"/>
-            <TextBox x:Name="CoeffA2" HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="25" Margin="212,0,0,0" TextAlignment="Center"/>
+            <TextBox x:Name="CoeffA2" HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="25" Margin="212,0,0,0" TextAlignment="Center" GotMouseCapture="GotMouseCapture" LostFocus="LostFocus"/>
             <Label x:Name="CoeffLabelA2" Content="a2 =" HorizontalAlignment="Left" Margin="180,-4,0,0" VerticalAlignment="Top" Width="34"/>
-            <TextBox x:Name="CoeffA1" HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="25" Margin="272,0,0,0" TextAlignment="Center"/>
+            <TextBox x:Name="CoeffA1" HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="25" Margin="272,0,0,0" TextAlignment="Center" GotMouseCapture="GotMouseCapture" LostFocus="LostFocus"/>
             <Label x:Name="CoeffLabelA1" Content="a1 =" HorizontalAlignment="Left" Margin="240,-4,0,0" VerticalAlignment="Top" Width="34"/>
-            <TextBox x:Name="CoeffA0" HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="25" Margin="332,0,0,0" TextAlignment="Center"/>
+            <TextBox x:Name="CoeffA0" HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="25" Margin="332,0,0,0" TextAlignment="Center" GotMouseCapture="GotMouseCapture" LostFocus="LostFocus"/>
             <Label x:Name="CoeffLabelA0" Content="a0 =" HorizontalAlignment="Left" Margin="300,-4,0,0" VerticalAlignment="Top" Width="34"/>
 
             <Label Content="Промежуток [" HorizontalAlignment="Left" Margin="0,25,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="IntervalA" HorizontalAlignment="Left" Height="18" Margin="83,30,0,0" TextWrapping="Wrap" Text="-99" VerticalAlignment="Top" Width="31" TextAlignment="Center"/>
+            <TextBox x:Name="IntervalA" HorizontalAlignment="Left" Height="18" Margin="83,30,0,0" TextWrapping="Wrap" Text="-99" VerticalAlignment="Top" Width="31" TextAlignment="Center" GotMouseCapture="GotMouseCapture"/>
             <Label Content=":" HorizontalAlignment="Left" Margin="112,25,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="IntervalB" HorizontalAlignment="Left" Height="18" Margin="122,30,0,0" TextWrapping="Wrap" Text="99" VerticalAlignment="Top" Width="31" TextAlignment="Center"/>
+            <TextBox x:Name="IntervalB" HorizontalAlignment="Left" Height="18" Margin="122,30,0,0" TextWrapping="Wrap" Text="99" VerticalAlignment="Top" Width="31" TextAlignment="Center" GotMouseCapture="GotMouseCapture"/>
             <Label Content="]" HorizontalAlignment="Left" Margin="149,25,0,0" VerticalAlignment="Top"/>
 
             <Label Content="Точность" HorizontalAlignment="Left" Margin="200,25,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="Accurate" HorizontalAlignment="Left" Height="18" Margin="261,30,0,0" TextWrapping="Wrap" Text="0.01" VerticalAlignment="Top" Width="40" TextAlignment="Center"/>
+            <TextBox x:Name="Accurate" HorizontalAlignment="Left" Height="18" Margin="261,30,0,0" TextWrapping="Wrap" Text="0.01" VerticalAlignment="Top" Width="40" TextAlignment="Center" GotMouseCapture="GotMouseCapture"/>
 
         </Grid>
-        <TextBox x:Name="XMIN" HorizontalAlignment="Left" Height="20" Margin="15,157,0,0" TextWrapping="Wrap" Text="-10" VerticalAlignment="Top" Width="31"/>
-        <TextBox x:Name="XMAX" HorizontalAlignment="Left" Height="20" Margin="275,157,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="31"/>
-        <TextBox x:Name="YMAX" HorizontalAlignment="Left" Height="20" Margin="309,180,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="31"/>
-        <TextBox x:Name="YMIN" HorizontalAlignment="Left" Height="20" Margin="309,454,0,0" TextWrapping="Wrap" Text="-10" VerticalAlignment="Top" Width="31"/>
+        <TextBox x:Name="XMIN" HorizontalAlignment="Left" Height="20" Margin="15,157,0,0" TextWrapping="Wrap" Text="-10" VerticalAlignment="Top" Width="31" GotMouseCapture="GotMouseCapture"/>
+        <TextBox x:Name="XMAX" HorizontalAlignment="Left" Height="20" Margin="275,157,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="31" GotMouseCapture="GotMouseCapture"/>
+        <TextBox x:Name="YMAX" HorizontalAlignment="Left" Height="20" Margin="309,180,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="31" GotMouseCapture="GotMouseCapture"/>
+        <TextBox x:Name="YMIN" HorizontalAlignment="Left" Height="20" Margin="309,454,0,0" TextWrapping="Wrap" Text="-10" VerticalAlignment="Top" Width="31" GotMouseCapture="GotMouseCapture"/>
         <Grid HorizontalAlignment="Left" Height="294" Margin="15,180,0,0" VerticalAlignment="Top" Width="291">
             <oxy:PlotView x:Name="PlotView" Margin="0,0,0,0" />
 
