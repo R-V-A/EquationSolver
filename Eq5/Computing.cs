@@ -154,7 +154,7 @@ namespace Eq5
                 case 1: return A[1] * x + A[0];
                 case 2: return A[2] * Math.Pow(x, 2) + A[1] * x + A[0];
                 case 3: return A[3] * Math.Pow(x, 3) + A[2] * Math.Pow(x, 2) + A[1] * x + A[0];
-                case 4: return A[4] * Math.Pow(x, 4) + A[3] * Math.Pow(x, 3) + A[2] * Math.Pow(x, 2) + A[1] * x + A[1];
+                case 4: return A[4] * Math.Pow(x, 4) + A[3] * Math.Pow(x, 3) + A[2] * Math.Pow(x, 2) + A[1] * x + A[0];
                 case 5: return A[5] * Math.Pow(x, 5) + A[4] * Math.Pow(x, 4) + A[3] * Math.Pow(x, 3) + A[2] * Math.Pow(x, 2) + A[1] * x + A[0];
                 default: return 0;
             }
