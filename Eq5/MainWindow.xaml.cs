@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -108,13 +109,13 @@ namespace Eq5
                     Convert.ToDouble(CoeffA3.Text), Convert.ToDouble(CoeffA4.Text), Convert.ToDouble(CoeffA5.Text)
                 };
                 Computing.GetIntervals(Convert.ToDouble(IntervalA.Text), Convert.ToDouble(IntervalB.Text));
-                Computing.HalfDivision(Convert.ToDouble(Accurate.Text));
+                Computing.HalfDivision(double.Parse(Accurate.Text, CultureInfo.InvariantCulture));
+                Pop_DiAnswers();
             }
             catch (FormatException exception)
             {
                 MessageBox.Show("Ошибка ввода.");
             }
-            Pop_DiAnswers();
         }
 
         private void GetGraph_OnClick(object sender, RoutedEventArgs e)
